@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Behaviour and Training</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #DFD3E3; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+        }
+
+        header {
+            background-color: #967BB6; 
+            padding: 09px;
+            color: black;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        header img {
+            width: 300px; 
+            height: 250;
+            margin-right: 250px; /
+        }
+
+        header h1 {
+            font-size: 50px;
+            font-family: Garamond;
+            margin: 0;
+        }
+
+        nav {
+            text-align: center;
+            margin: 20px;
+            background-color: #967BB6; 
+            padding: 10px; 
+            border-radius: 0px; 
+            width: 100%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-sizing: border-box;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black; 
+            font-size: 20px;
+            margin: 15px; 
+        }
+
+        nav a.active {
+            font-weight: bold;
+            color: #0C090A;
+        }
+
+        .dropdown {
+            display: inline-block;
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #967BB6; 
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #967BB6;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #967BB6;
+        }
+
+        .content {
+            display: flex;
+            width: 100%;
+            max-width: 1200px;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .image-container {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+        }
+
+        .text-container {
+            flex: 2;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #967BB6; 
+            padding: 10px;
+            text-align: left;
+            font-size: 15px;
+            color: black;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .footer-links {
+            text-align: right;
+        }
+
+        .footer-links a {
+            text-decoration: none;
+            color: #0000EE;
+            font-size: 15px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="image/cat logo.png" alt="Cat Logo">
+    <h1>ADOPTION CAT &#128062;</h1>
+</header>
+    
+<nav>
+    <a href="index.html">Home</a> |
+    <div class="dropdown">
+        <a class="dropbtn">About Us</a>|
+        <div class="dropdown-content">
+            <a href="organization.html" target="_self">Organization Chart</a>
+            <a href="teamprofile.html" target="_self">Team Profile</a>
+            <a href="contact.html" target="_self">Contact</a>
+        </div>
+    </div>
+
+<a href="success.html">Feedback</a> |
+    <a href="whyadopt.html">Why Adopt?</a> |
+    <div class="dropdown">
+        <a class="active dropbtn">Cat Care Tips</a>|
+        <div class="dropdown-content">
+            <a href="tips.html" target="_self">Health and Wellness</a>
+            <a href="behaviour.html" target="_self" class="active dropbtn">Behaviour and Training</a>
+        </div>
+    </div>
+    
+    <div class="dropdown">
+        <a class="dropbtn">Adoption Cat</a>|
+        <div class="dropdown-content">
+            <a href="blackcat.html" target="_self">Black Cat</a>
+            <a href="tabbycat.html" target="_self">Tabby Cat</a>
+            <a href="whitecat.html" target="_self">White Cat</a>
+            <a href="calicocat.html" target="_self">Calico Cat</a>
+        </div>
+    </div>
+
+    <a href="adoptprocess.html">Adoption Process</a>  |
+    <div class="dropdown">
+        <a class="dropbtn">Register</a>
+        <div class="dropdown-content">
+            <a href="customer.html" target="_self">Customer Information</a>
+            <a href="catinformation.html" target="_self">Cat Information</a>
+        </div>
+    </div>
+</nav>
+
+<div class="content">
+    <div class="text-container">
+    <h1 style="font-family:Segoe Script;text-align: center;">BEHAVIOUR AND TRAINING</h1>
+    <h3>Understand Cat Behaviour</h3>
+    <ol>
+        <li><b>Body Language:</b>
+            <ul>
+                <li><b>Tail:</b> A high tail shows happiness and confidence, while a low or tucked tail indicates fear or anxiety.</li>
+                <li><b>Ears:</b> Forward-facing ears show interest, while flattened ears signal fear or aggression.</li>
+                <li><b>Purring:</b> Usually means contentment, but can also indicate distress.</li>
+                <li><b>Kneading:</b> A sign of comfort and pleasure from kittenhood.</li>
+            </ul>
+        </li>
+
+        <li><b>Common Behaviors:</b>
+            <ul>
+                <li><b>Scratching:</b> Cats scratch to mark territory, stretch, and shed old claw sheaths. Provide scratching posts to protect your furniture.</li>
+                <li><b>Litter Box Use:</b> Cats are clean animals, but changes in litter box habits can indicate health issues or stress.</li>
+                <li><b>Play:</b> Essential for physical and mental stimulation. Use interactive toys and play sessions to prevent boredom and behavioral issues.</li>
+            </ul>
+        </li>
+    </ol>
+
+    <h3>Training Tips</h3>
+    <ol>
+        <li><b>Positive Reinforcement:</b>
+            <ul>
+                <li>Reward desired behaviors with treats, praise, and affection.</li>
+                <li>Avoid punishment, as it can lead to fear and aggression.</li>
+            </ul>
+        </li>
+        <li><b>Clicker Training:</b>
+            <ul>
+                <li>Use a clicker to mark desired behaviors, followed by a reward.</li>
+                <li>Start with simple commands like "sit" or "come," associating the click with the reward.</li>
+            </ul>
+        </li>
+
+        <li><b>Litter Box Training:</b>
+            <ul>
+                <li>Place the litter box in a quiet, accessible location.</li>
+                <li>Keep it clean to encourage use.</li>
+                <li>Clean accidents thoroughly to remove the scent and prevent repeats.</li>
+            </ul>
+        </li>
+
+        <li><b>Discouraging Unwanted Behavior:</b>
+            <ul>
+                <li>Use deterrents like double-sided tape or citrus sprays to keep cats away from certain areas.</li>
+                <li>Redirect scratching to scratching posts by placing them in your cat's favorite spots.</li>
+            </ul>
+        </li>
+
+        <li><b>Socialization:</b>
+            <ul>
+                <li>Gradually introduce your cat to new people, animals, and environments to build confidence.</li>
+                <li>Use positive reinforcement to make new experiences enjoyable.</li>
+            </ul>
+        </li>
+    </ol>
+
+    <h3>Addressing Behavioral Issues</h3>
+    <ol>
+        <li><b>Aggression:</b>
+            <ul>
+                <li>Identify and avoid triggers that provoke aggression.</li>
+                <li>Provide plenty of playtime to burn off excess energy.</li>
+            </ul>
+        </li>
+
+        <li><b>Anxiety:</b>
+            <ul>
+                <li>Create a safe, quiet space for your cat to retreat to.</li>
+                <li>Use calming products like pheromone diffusers to reduce stress.</li>
+            </ul>
+        </li>
+
+        <li><b>Destructive Behavior:</b>
+            <ul>
+                <li>Provide lots of toys and activities to prevent boredom.</li>
+                <li>Rotate toys to keep them interesting.</li>
+            </ul>
+        </li>
+    </ol>
+
+    <h3>Health and Well-being</h3>
+    <ol>
+        <li><b>Regular Vet Visits:</b>
+            <ul>
+                <li>Regular check-ups can catch health issues early, which can affect behavior.</li>
+                <li>Keep vaccinations and parasite control up to date.</li>
+            </ul>
+        </li>
+        <li><b>Diet and Nutrition:</b>
+            <ul>
+                <li>Provide a balanced diet suitable for your cat’s age and health needs.</li>
+                <li>Monitor your cat’s weight and avoid overfeeding.</li>
+            </ul>
+        </li>
+        <li><b>Environmental Enrichment:</b>
+            <ul>
+                <li>Offer climbing structures, hiding places, and interactive toys for mental and physical stimulation.</li>
+                <li>Consider window perches for bird watching and safe outdoor exploration.</li>
+            </ul>
+        </li>
+    </ol>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Meow Meow Website. All rights reserved. Last update 24 June 2024.</p>
+</footer>
+
+</body>
+</html>

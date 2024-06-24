@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>White Cat</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #DFD3E3; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+        }
+
+        header {
+            background-color: #967BB6; 
+            padding: 09px;
+            color: black;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        header img {
+            width: 300px; 
+            height: 250;
+            margin-right: 250px; /
+        }
+
+        header h1 {
+            font-size: 50px;
+            font-family: Garamond;
+            margin: 0;
+        }
+
+        nav {
+            text-align: center;
+            margin: 20px;
+            background-color: #967BB6; 
+            padding: 10px; 
+            border-radius: 0px; 
+            width: 100%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-sizing: border-box;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black; 
+            font-size: 20px;
+            margin: 15px; 
+        }
+
+        nav a.active {
+            font-weight: bold;
+            color: #0C090A;
+        }
+
+        .dropdown {
+            display: inline-block;
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #967BB6; 
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #967BB6;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #967BB6;
+        }
+
+        .content {
+            display: flex;
+            width: 100%;
+            max-width: 1200px;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .image-container {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+        }
+
+        .text-container {
+            flex: 2;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #967BB6; 
+            padding: 10px;
+            text-align: left;
+            font-size: 15px;
+            color: black;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .footer-links {
+            text-align: right;
+        }
+
+        .footer-links a {
+            text-decoration: none;
+            color: #0000EE;
+            font-size: 15px;
+            margin-left: 10px;
+        }
+
+        .footer-links a {
+            text-decoration: none;
+            color: #0000EE;
+            font-size: 15px;
+            margin-left: 10px;
+        }
+
+        table {
+            width: 100%; 
+            border-collapse: collapse; 
+            margin-top: 20px; 
+        }
+        table td {
+            padding: 20px; 
+            text-align: center; 
+        }
+        
+        p {
+            text-align: left; 
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="image/cat logo.png" alt="Cat Logo">
+    <h1>ADOPTION CAT &#128062;</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a> |
+    <div class="dropdown">
+        <a class="dropbtn">About Us</a>|
+        <div class="dropdown-content">
+            <a href="organization.html" target="_self">Organization Chart</a>
+            <a href="teamprofile.html" target="_self">Team Profile</a>
+            <a href="contact.html" target="_self">Contact</a>
+        </div>
+    </div>
+
+    <a href="success.html" >Feedback</a> |
+    <a href="whyadopt.html">Why Adopt?</a> |
+    <div class="dropdown">
+        <a class="dropbtn">Cat Care Tips</a>|
+        <div class="dropdown-content">
+            <a href="tips.html" target="_self">Health and Wellness</a>
+            <a href="behaviour.html" target="_self">Behaviour and Training</a>
+        </div>
+    </div>
+    
+    <div class="dropdown">
+        <a class="active dropbtn">Adoption Cat</a>|
+        <div class="dropdown-content">
+            <a href="blackcat.html" target="_self">Black Cat</a>
+            <a href="tabbycat.html" target="_self">Tabby Cat</a>
+            <a href="whitecat.html" target="_self" class="active dropbtn">White Cat</a>
+            <a href="calicocat.html" target="_self">Calico Cat</a>
+            
+        </div>
+    </div>
+
+    <a href="adoptprocess.html">Adoption Process</a>  |
+    <div class="dropdown">
+        <a class="dropbtn">Register</a>
+        <div class="dropdown-content">
+            <a href="customer.html" target="_self">Customer Information</a>
+            <a href="catinformation.html" target="_self">Cat Information</a>
+        </div>
+    </div>
+</nav>
+
+<div class="content">
+    <div class="text-container">
+       <h1 style="font-family:Segoe Script;text-align: center;">WHITE CAT </h1>
+
+    </div>
+</div>
+
+
+</body>
+</html>
+
+
+    <p>
+        <center>
+        <table>
+        <tr>
+        <td>
+         <p style="font-size: 25px; text-align: center;"><b>W01</b></p>
+        <img src="image/whitecat1.jpg" width="200" height="200"><br>
+        <p>
+        <br><b>Name: </b>Coconut
+        <br><b>Age: </b>6 months
+        <br><b>Weight: </b>3kg
+        <br><b>Color: </b>White & Brown
+        <br><b>Personality: </b>Lazy
+        <br><b>Location found: </b>Library entrance
+        <br><b>Availability: </b>Adopted
+        </p>
+        </td>
+        
+        
+        <td>
+        <p style="font-size: 25px; text-align: center;"><b>W02</b></p>
+        <img src="image/whitecat2.jpg" width="200" height="200"><br>
+        <p>
+        <br><b>Name: </b>Calla
+        <br><b>Age: </b>3 years
+        <br><b>Weight: </b>4kg
+        <br><b>Color: </b>White & Black
+        <br><b>Personality: </b>Clingy
+        <br><b>Location found: </b>Campus
+        <br><b>Availability: </b>Available
+        </p>
+        </td>
+
+
+        <td>
+        <p style="font-size: 25px; text-align: center;"><b>W03</b></p>
+        <img src="image/whitecat3.jpg" width="200" height="200"><br>
+        <p>
+        <br><b>Name: </b>Dove
+        <br><b>Age: </b>3 months
+        <br><b>Weight: </b>2kg
+        <br><b>Color: </b>White
+        <br><b>Personality: </b>Calm & Shy
+        <br><b>Location found: </b>Park
+        <br><b>Availability: </b>Available
+        </p>
+        </td>
+        
+        <td>
+        <p style="font-size: 25px; text-align: center;"><b>W04</b></p>
+        <img src="image/whitecat4.jpg" width="200" height="200"><br>
+        <p>
+        <br><b>Name: </b>Bezza
+        <br><b>Age: </b>3 years
+        <br><b>Weight: </b>4kg
+        <br><b>Color: </b>White & Orange
+        <br><b>Personality: </b> Eat a lot
+        <br><b>Location found: </b>Street corner
+        <br><b>Availability: </b> Adopted
+        </p>
+        </td>
+        </tr>
+        </table>
+        </center>
+
+
+        <footer>
+            <p>&copy; 2024 Meow Meow Website. All rights reserved. Last Update 24 June 2024.</p>
+        </footer>
+    </body>
+    </html>

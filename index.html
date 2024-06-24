@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Adoption Cat</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #DFD3E3; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+        }
+
+        header {
+            background-color: #967BB6; 
+            padding: 09px;
+            color: black;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        header img {
+            width: 300px; 
+            height: 250;
+            margin-right: 250px; /
+        }
+
+        header h1 {
+            font-size: 50px;
+            font-family: Garamond;
+            margin: 0;
+        }
+
+        nav {
+            text-align: center;
+            margin: 20px;
+            background-color: #967BB6; 
+            padding: 10px; 
+            border-radius: 0px; 
+            width: 100%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-sizing: border-box;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black; 
+            font-size: 20px;
+            margin: 15px; 
+        }
+
+        nav a.active {
+            font-weight: bold;
+            color: #0C090A;
+        }
+
+        .dropdown {
+            display: inline-block;
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #967BB6; 
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #967BB6;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #967BB6;
+        }
+
+        .content {
+            display: flex;
+            width: 100%;
+            max-width: 1200px;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .image-container {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+        }
+
+        .text-container {
+            flex: 2;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #967BB6; 
+            padding: 10px;
+            text-align: left;
+            font-size: 15px;
+            color: black;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .footer-links {
+            text-align: right;
+        }
+
+        .footer-links a {
+            text-decoration: none;
+            color: #0000EE;
+            font-size: 15px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="image/cat logo.png" alt="Cat Logo">
+    <h1>ADOPTION CAT &#128062;</h1>
+</header>
+
+<nav>
+    <a href="index.html" class="active">Home</a> |
+    <div class="dropdown">
+        <a class="dropbtn">About Us</a>|
+        <div class="dropdown-content">
+            <a href="organization.html" target="_self">Organization Chart</a>
+            <a href="teamprofile.html" target="_self">Team Profile</a>
+            <a href="contact.html" target="_self">Contact</a>
+        </div>
+    </div>
+
+    <a href="success.html" >Feedback</a> |
+    <a href="whyadopt.html">Why Adopt?</a> |
+    <div class="dropdown">
+        <a class="dropbtn">Cat Care Tips</a>|
+        <div class="dropdown-content">
+            <a href="tips.html" target="_self">Health and Wellness</a>
+            <a href="behaviour.html" target="_self">Behaviour and Training</a>
+        </div>
+    </div>
+    
+    <div class="dropdown">
+        <a class="dropbtn">Adoption Cat</a>|
+        <div class="dropdown-content">
+            <a href="blackcat.html" target="_self">Black Cat</a>
+            <a href="tabbycat.html" target="_self">Tabby Cat</a>
+            <a href="whitecat.html" target="_self">White Cat</a>
+            <a href="calicocat.html" target="_self">Calico Cat</a>
+            
+        </div>
+    </div>
+
+    <a href="adoptprocess.html">Adoption Process</a>  |
+    <div class="dropdown">
+        <a class="dropbtn">Register</a>
+        <div class="dropdown-content">
+            <a href="customer.html" target="_self">Customer Information</a>
+            <a href="catinformation.html" target="_self">Cat Information</a>
+        </div>
+    </div>
+</nav>
+
+<div class="content">
+    <div class="text-container">
+        <h1 style="font-family:Segoe Script;text-align: center;">VISSION</h1>
+
+        <h2 style="text-align: center;">Ensuring interaction between people and cats and reducing stray cats' misery</h2>
+        <br>
+        <h1 style="font-family:Segoe Script;text-align: center;">MISSION</h1>
+        <h2 style="text-align: center;">Ensure the health of the cat is always protected from the occurrence of cruel abusey</h2>
+        <br>
+        <h1 style="font-family:Segoe Script;text-align: center;">OBJECTIVE</h1>
+        <h2 style="text-align: center;">This organization matches prospective adopters with cats in need of loving homes.
+            Ensuring that every cat has a secure, caring, and home, along with encouraging responsible pet ownership.</h2>
+<ul>
+    <li><p style="font-size:150%;"> Awareness about the benefits of adopting cats from shelters and rescue organizations.</li></p>
+    <li><p style="font-size:150%;"> Organize regular community events, such as adoption fairs, pet care workshops, and fundraising activities.</li></p>
+    <li><p style="font-size:150%;"> Taking care of a cat helps owners develop empathy and compassion by teaching them how to recognise and react to the needs and behaviours of their pet.</p></li>   
+</ul>
+    </div>
+</div>
+
+<audio src="audio/cat audio.mp3" controls></audio>
+
+<footer>
+    <p>&copy; 2024 Meow Meow Website. All rights reserved. Last Update 24 June 2024.</p>
+</footer>
+
+
+</body>
+</html>

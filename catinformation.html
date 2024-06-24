@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cat Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #DFD3E3; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+        }
+
+        header {
+            background-color: #967BB6; 
+            padding: 09px;
+            color: black;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        header img {
+            width: 300px; 
+            height: 250px;
+            margin-right: 250px;
+        }
+
+        header h1 {
+            font-size: 50px;
+            font-family: Garamond;
+            margin: 0;
+        }
+
+        nav {
+            text-align: center;
+            margin: 20px;
+            background-color: #967BB6; 
+            padding: 10px; 
+            border-radius: 0px; 
+            width: 100%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-sizing: border-box;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black; 
+            font-size: 20px;
+            margin: 15px; 
+        }
+
+        nav a.active {
+            color: #0C090A;
+            font-weight: bold;
+        }
+
+        .dropdown {
+            display: inline-block;
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #967BB6; 
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #967BB6;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #967BB6;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        input[type=text], input[type=password], input[type=tel], input[type=datetime-local], input[type=number], input[type=date], textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+
+        input[type=text]:focus, input[type=password]:focus, input[type=tel]:focus, input[type=datetime-local]:focus, input[type=number]:focus, input[type=date]:focus, textarea:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+
+        hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+        }
+
+        button, a.button-link {
+            background-color: #7FFFD4; 
+            color: black;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+            text-align: center;
+            text-decoration: none; 
+            display: inline-block; 
+        }
+
+        button:hover, a.button-link:hover {
+            opacity: 1;
+        }
+
+        .cancelbtn {
+            background-color: #C24641;
+        }
+
+        .button-container {
+            display: flex;
+            width: 100%;
+            gap: 10px;
+        }
+
+        .container {
+            padding: 16px;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        @media screen and (max-width: 300px) {
+            .button-container {
+                flex-direction: column;
+            }
+        }
+
+        footer {
+            background-color: #967BB6; 
+            padding: 10px;
+            text-align: left;
+            font-size: 15px;
+            color: black;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .footer-links {
+            text-align: right;
+        }
+
+        .footer-links a {
+            text-decoration: none;
+            color: #0000EE;
+            font-size: 15px;
+            margin-left: 10px;
+        }
+
+        .modal {
+            display: none; 
+            position: fixed; 
+            z-index: 1000; 
+            padding-top: 60px; 
+            left: 0;
+            top: 0;
+            width: 100%; 
+            height: 100%; 
+            overflow: auto; 
+            background-color: rgba(0,0,0,0.9); 
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
+
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        a.button-link:link, a.button-link:visited {
+            background-color: #A0CFEC;
+            color: black;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        a.button-link:hover, a.button-link:active {
+            background-color: #ADD8E6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="image/cat logo.png" alt="Cat Logo">
+        <h1>ADOPTION CAT &#128062;</h1>
+    </header>
+        
+    <nav>
+        <a href="index.html">Home</a> |
+        <div class="dropdown">
+            <a class="dropbtn">About Us</a>|
+            <div class="dropdown-content">
+                <a href="organization.html" target="_self">Organization Chart</a>
+                <a href="teamprofile.html" target="_self">Team Profile</a>
+                <a href="contact.html" target="_self">Contact</a>
+            </div>
+        </div>
+    
+        <a href="success.html">Feedback</a> |
+        <a href="whyadopt.html">Why Adopt?</a> |
+        <div class="dropdown">
+            <a class="dropbtn">Cat Care Tips</a>|
+            <div class="dropdown-content">
+                <a href="tips.html" target="_self">Health and Wellness</a>
+                <a href="behaviour.html" target="_self">Behaviour and Training</a>
+            </div>
+        </div>
+        
+        <div class="dropdown">
+            <a class="dropbtn">Adoption Cat</a>|
+            <div class="dropdown-content">
+                <a href="blackcat.html" target="_self">Black Cat</a>
+                <a href="tabbycat.html" target="_self">Tabby Cat</a>
+                <a href="whitecat.html" target="_self">White Cat</a>
+                <a href="calicocat.html" target="_self">Calico Cat</a>
+            </div>
+        </div>
+    
+        <a href="adoptprocess.html">Adoption Process</a>  |
+        <div class="dropdown">
+            <a class="active dropbtn">Register</a>
+            <div class="dropdown-content">
+                <a href="customer.html" target="_self">Customer Information</a>
+                <a href="catinformation.html" target="_self" class="active dropbtn">Cat Information</a>
+            </div>
+        </div>
+    </nav>
+    
+    <form style="border:1px solid #ccc">
+        <div class="container">
+            <h2 style="font-family:Segoe Script">Register adoption</h2>
+            <p>Please fill cat information in this form to adopt a cat.</p>
+            <hr>
+
+            <label for="code"><b>Cat Adoption Code:</b></label>
+            <input type="number" placeholder="Enter cat adoption code" id="code" required>
+            <br><br>
+
+            <label for="cat color"><b>Color of cat:</b></label><br>
+            <input type="checkbox" id="cat1" name="cat color" value="black cat">
+            <label for="cat1">Black Cat</label><br>
+            <input type="checkbox" id="cat2" name="cat color" value="tabby cat">
+            <label for="cat2">Tabby Cat</label><br>
+            <input type="checkbox" id="cat3" name="cat color" value="white cat">
+            <label for="cat3">White Cat</label><br>
+            <input type="checkbox" id="cat4" name="cat color" value="calico cat">
+            <label for="cat4">Calico Cat</label>
+            <br><br>
+
+            <label for="adoption_date"><b>Adoption Date:</b></label>
+            <input type="date" id="adoption_date" name="adoption_date">
+
+            <label for="appointmenttime"><b>Appointment (date and time):</b></label>
+            <input type="datetime-local" id="appointmenttime">
+
+            <label for="notes"><b>NOTES:</b></label><br>
+            <textarea id="notes" name="notes" rows="5" cols="40"></textarea>
+            <br><br>
+
+            <div class="clearfix">
+                <button type="button" class="cancelbtn">Cancel</button>
+                <button type="button" class="sendbtn" onclick="sendWhatsApp()">Send</button>
+            </div>
+        </div>
+    </form>
+
+    <script>
+        function sendWhatsApp() {
+            const code = document.getElementById('code').value;
+            const adoptionDate = document.getElementById('adoption_date').value;
+            const appointment = document.getElementById('appointmenttime').value;
+            const notes = document.getElementById('notes').value;
+
+            let cats = [];
+            if (document.getElementById('cat1').checked) cats.push(document.getElementById('cat1').value);
+            if (document.getElementById('cat2').checked) cats.push(document.getElementById('cat2').value);
+            if (document.getElementById('cat3').checked) cats.push(document.getElementById('cat3').value);
+            if (document.getElementById('cat4').checked) cats.push(document.getElementById('cat4').value);
+
+            const catsList = cats.join(', ');
+            const whatsappMessage = `Cat Adoption Code: ${code}\nColor of Cat: ${catsList}\nAdoption Date: ${adoptionDate}\nAppointment: ${appointment}\nNotes: ${notes}`;
+            const encodedMessage = encodeURIComponent(whatsappMessage);
+            const whatsappUrl = `https://api.whatsapp.com/send?phone=60132757069&text=${encodedMessage}`;
+
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
+
+<footer>
+    <p>&copy; 2024 Meow Meow Website. All rights reserved. Last Update 24 June 2024.</p>
+</footer>
+
+</body>
+</html>

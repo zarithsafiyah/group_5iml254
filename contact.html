@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #DFD3E3; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+        }
+
+        header {
+            background-color: #967BB6; 
+            padding: 09px;
+            color: black;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        header img {
+            width: 300px; 
+            height: 250;
+            margin-right: 250px; /
+        }
+
+        header h1 {
+            font-size: 50px;
+            font-family: Garamond;
+            margin: 0;
+        }
+
+        nav {
+            text-align: center;
+            margin: 20px;
+            background-color: #967BB6; 
+            padding: 10px; 
+            border-radius: 0px; 
+            width: 100%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-sizing: border-box;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black; 
+            font-size: 20px;
+            margin: 15px; 
+        }
+
+        nav a.active {
+            font-weight: bold;
+            color: #0C090A;
+        }
+
+        .dropdown {
+            display: inline-block;
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #967BB6; 
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #967BB6;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #967BB6;
+        }
+
+        .content {
+            display: flex;
+            width: 100%;
+            max-width: 1200px;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .image-container {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+        }
+
+        .text-container {
+            flex: 2;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #967BB6; 
+            padding: 10px;
+            text-align: left;
+            font-size: 15px;
+            color: black;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .footer-links {
+            text-align: right;
+        }
+
+        .footer-links a {
+            text-decoration: none;
+            color: #0000EE;
+            font-size: 15px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="image/cat logo.png" alt="Cat Logo">
+    <h1>ADOPTION CAT &#128062;</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a> |
+    <div class="dropdown">
+        <a class="active dropbtn">About Us</a>|
+        <div class="dropdown-content">
+            <a href="organization.html" target="_self">Organization Chart</a>
+            <a href="teamprofile.html" target="_self">Team Profile</a>
+            <a href="contact.html" target="_self" class="active dropbtn">Contact</a>
+        </div>
+    </div>
+
+<a href="success.html" >Feedback</a> |
+    <a href="whyadopt.html">Why Adopt?</a> |
+    <div class="dropdown">
+        <a class="dropbtn">Cat Care Tips</a>|
+        <div class="dropdown-content">
+            <a href="tips.html" target="_self">Health and Wellness</a>
+            <a href="behaviour.html" target="_self">Behaviour and Training</a>
+        </div>
+    </div>
+    
+    <div class="dropdown">
+        <a class="dropbtn">Adoption Cat</a>|
+        <div class="dropdown-content">
+            <a href="blackcat.html" target="_self">Black Cat</a>
+            <a href="tabbycat.html" target="_self">Tabby Cat</a>
+            <a href="whitecat.html" target="_self">White Cat</a>
+            <a href="calicocat.html" target="_self">Calico Cat</a>
+        </div>
+    </div>
+
+    <a href="adoptprocess.html">Adoption Process</a>  |
+    <div class="dropdown">
+        <a class="dropbtn">Register</a>
+        <div class="dropdown-content">
+            <a href="customer.html" target="_self">Customer Information</a>
+            <a href="catinformation.html" target="_self">Cat Information</a>
+        </div>
+    </div>
+</nav>
+
+<div class="content">
+    <div class="text-container">
+<p style="font-size: 20px;">
+<b>Get in Touch with Us!
+<p style="font-size: 20px;">Address:</b>
+<br> Sungai petani, Kedah
+<br> <a href="https://www.google.com/maps?ll=5.655304,100.548534&z=10&t=m&hl=en&gl=MY&mapclient=embed&q=Sungai+Petani+Kedah"target=_blank>Location</a>
+
+
+<p style="font-size: 20px;"><b>Email:</b>
+    <br> meowadopt@gmail.com
+
+    <p style="font-size: 20px;"><b>Phone:</b>
+    <br>03-4546758
+
+    <p style="font-size: 20px;"><b>Follow us:</b>
+        <br><a href ="https://www.facebook.com/login.php/" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+
+    </p>
+
+    <p style="font-size: 20px;"><b>Operation:</b>
+<table border="1" cellpadding="3" cellspacing="3" align="left" height="200" width="600">
+
+    <th rowspan="3" ><font-size="30px">Day</font></th>
+    </tr>
+    <tr>
+    <th colspan="2">Schedule</th>
+    <tr>
+    <th>Begin</th><th>End</th>
+    
+    <tr>
+    <td rowspan="2">Sunday</td>
+    <td rowspan="2">10:00 a.m.</td>
+    <td rowspan="2">5:00 p.m.</td>
+    <tr>
+    
+    <tr>
+    <td rowspan="2">Monday</td>
+    <td rowspan="2">10:00 a.m.</td>
+    <td rowspan="2">5:00 p.m.</td>
+    <tr>
+    
+    <tr>
+    <td rowspan="2">Tuesday</td>
+    <td rowspan="2">10:00 a.m.</td>
+    <td rowspan="2">5:00 p.m.</td>
+    <tr>
+
+    <tr>
+    <td rowspan="2">Wednesday</td>
+    <td rowspan="2">10:00 a.m.</td>
+    <td rowspan="2">5:00 p.m.</td>
+    <tr>
+
+        
+        <tr>
+        <td rowspan="2">Thursday</td>
+        <td rowspan="2">10:00 a.m.</td>
+        <td rowspan="2">12:00 p.m.</td>
+        </tr>
+        <p>
+    
+    
+    </table></p>
+
+
+</div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Meow Meow Website. All rights reserved. Last Update 24 June 2024.</p>
+</footer>
+</body>
+</html>
